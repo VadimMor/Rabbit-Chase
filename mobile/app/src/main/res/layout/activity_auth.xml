@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:layout_marginHorizontal="33dp"
+        android:gravity="center"
+        android:text="@string/title_rabbit_chase"
+        android:fontFamily="@font/nunito_semi_bold"
+        android:textSize="32sp"
+        android:textAllCaps="true"
+        android:textFontWeight="@integer/material_motion_duration_long_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical">
+
+        <!--    Форма для логина    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_input_login"
+                android:fontFamily="@font/nunito_medium"
+                android:textSize="24sp"
+                android:textFontWeight="@integer/material_motion_duration_medium_2"
+                android:layout_marginBottom="8dp"
+                android:textColor="#202027" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_shadow"
+                android:hint="@string/hint_edittext_login"
+                android:padding="12dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!--    Форма для пароля    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_password"
+                android:fontFamily="@font/nunito_medium"
+                android:textSize="24sp"
+                android:textFontWeight="@integer/material_motion_duration_medium_2"
+                android:layout_marginBottom="8dp"
+                android:textColor="#202027" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_shadow"
+                android:hint="@string/hint_edittext_password"
+                android:padding="12dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:gravity="center"
+            android:text="@string/button_auth"
+            android:fontFamily="@font/nunito_medium"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#202027"
+            android:textSize="24sp" />
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#D9D9D9"
+            android:text="@string/button_registration"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:textAllCaps="true"
+            android:textColor="#3E3E3E"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

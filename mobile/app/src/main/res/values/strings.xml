@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rabbit Chase</string>
+    <string name="button_get_info_user">Get info user</string>
+    <string name="title_rabbit_chase">Rabbit Chase</string>
+    <string name="text_input_login">Логин:</string>
+    <string name="hint_edittext_login">Введите логин</string>
+    <string name="text_password">Пароль:</string>
+    <string name="hint_edittext_password">Введите пароль</string>
+    <string name="button_auth">Войти</string>
+    <string name="button_registration">Регситрация</string>
+    <string name="description_getInfoGame">Get info game</string>
+    <string name="description_searchOpponent">Search for the nearest opponent</string>
+</resources>

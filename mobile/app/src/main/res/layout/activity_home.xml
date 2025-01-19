@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/map_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        android:paddingStart="48dp"
+        android:paddingTop="11dp"
+        android:paddingEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_info"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#D9D9D9"
+                android:contentDescription="@string/description_getInfoGame"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/description_getInfoGame"
+                android:src="@drawable/info"
+                app:layout_constraintBottom_toBottomOf="@id/button_info"
+                app:layout_constraintEnd_toEndOf="@id/button_info"
+                app:layout_constraintStart_toStartOf="@id/button_info"
+                app:layout_constraintTop_toTopOf="@id/button_info" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_user"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#D9D9D9"
+                android:contentDescription="@string/button_get_info_user"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/description_searchOpponent"
+                android:src="@drawable/ic_user"
+                app:layout_constraintBottom_toBottomOf="@id/button_user"
+                app:layout_constraintEnd_toEndOf="@id/button_user"
+                app:layout_constraintStart_toStartOf="@id/button_user"
+                app:layout_constraintTop_toTopOf="@id/button_user" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_binoculars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#D9D9D9"
+            android:contentDescription="@string/description_searchOpponent"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/button_get_info_user"
+            android:src="@drawable/binoculars_1"
+            app:layout_constraintBottom_toBottomOf="@id/button_binoculars"
+            app:layout_constraintEnd_toEndOf="@id/button_binoculars"
+            app:layout_constraintStart_toStartOf="@id/button_binoculars"
+            app:layout_constraintTop_toTopOf="@id/button_binoculars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
